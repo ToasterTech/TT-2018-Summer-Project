@@ -1,5 +1,6 @@
 package main.java.frc.team5332.robot;
 
+import edu.wpi.first.wpilibj.Joystick;
 import main.java.frc.team5332.subsystems.Drivetrain;
 
 public class CMap {
@@ -9,7 +10,14 @@ public class CMap {
     public static int motor_rightDrive1 = 2;
     public static int motor_rightDrive2 = 3;
 
+    //Joystick Objects
+    public static Joystick gamepad = new Joystick(0);
+
+    //Joystick Axes
+    public static int gamepad_leftYAxis = 0;
+    public static int gamepad_rightYAxis = 1;
+
     //Subsystems
-    Drivetrain drivetrain = new Drivetrain();
+    public static Drivetrain drivetrain = new Drivetrain();
 
 }
